@@ -1,10 +1,7 @@
 use std::*;
 use std::io::stdin;
-
 mod directories_list;
-mod shadowing;
-mod borrowing;
-mod slice;
+mod basic_concepts;
 
 fn strings()  {
     println!("Define a string: ");
@@ -19,8 +16,8 @@ fn main() {
     //Define new string
     let my_string = String::from("Hello World");
 
-    shadowing::shadowing();
-    borrowing::borrow();
-    slice::slice_string(&my_string);
+    basic_concepts::shadowing::shadowing();
+    basic_concepts::borrowing::borrow();
+    basic_concepts::slice::slice_string(&my_string);
     strings();
 }
