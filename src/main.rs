@@ -15,6 +15,10 @@ fn strings()  {
 fn main() {
     //Define new string
     let my_string = String::from("Hello World");
+    let mut choice = String::new();
+
+    println!("Do you wish to analyze your current directory?");
+    stdin().read_line(&mut choice).expect("Enter a valid string");
 
     basic_concepts::shadowing::shadowing();
     basic_concepts::borrowing::borrow();
