@@ -19,5 +19,14 @@ fn main() {
     basic_concepts::shadowing::shadowing();
     basic_concepts::borrowing::borrow();
     basic_concepts::slice::slice_string(&my_string);
-    strings();
+    //strings();
+
+
+
+    match choice.trim() {
+        "yes" => directories_list::directory_name(),
+        "no" => println!("Exiting"),
+        _ => {}
+    }
+
 }

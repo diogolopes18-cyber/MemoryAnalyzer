@@ -1,13 +1,14 @@
 use std::fs;
+use std::*;
 
-struct Directory {
-    name: String,
-    size: f32,
-    location: String,
-}
+pub fn directory_name() {
+    //unwrap returns the type of the function in case of success
+    //If there is an error it will return an error
+    let directory = String::from("./");
 
-impl Directory {
-    pub fn list_dir(&self) -> i32{
-        return 0;
+    let path = fs::read_dir(&directory).unwrap();
+
+    for paths in path {
+        println!("Name: {}", paths.unwrap().path().display());
     }
 }
