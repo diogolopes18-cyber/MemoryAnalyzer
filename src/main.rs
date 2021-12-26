@@ -3,6 +3,7 @@ use std::io::stdin;
 mod directories_list;
 mod basic_concepts;
 
+#[allow(dead_code)]
 fn strings()  {
     println!("Define a string: ");
 
