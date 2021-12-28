@@ -1,5 +1,7 @@
 use std::fs;
 use std::*;
+use std::path::Path;
+use filesize::PathExt;
 
 pub fn directory_name() {
     //unwrap returns the type of the function in case of success
