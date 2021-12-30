@@ -23,24 +23,5 @@ fn basic_concepts() {
 }
 
 fn main() {
-    //Define new string
-    let my_string = String::from("Hello World");
-    let mut choice = String::new();
-
-    println!("Do you wish to analyze your current directory?");
-    stdin().read_line(&mut choice).expect("Enter a valid string");
-
-    basic_concepts::shadowing::shadowing();
-    basic_concepts::borrowing::borrow();
-    basic_concepts::slice::slice_string(&my_string);
-    //strings();
-
-
-
-    match choice.trim() {
-        "yes" => directories_list::directory_name(),
-        "no" => println!("Exiting"),
-        _ => {}
-    }
-
+    cli_interface::user_input::read_user_input();
 }
