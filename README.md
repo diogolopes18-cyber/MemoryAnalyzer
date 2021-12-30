@@ -12,7 +12,13 @@ A simple memory analyzer built with Rust
 
 1. `cargo build`
 
-2. `cargo run`
+2. `rustc src/main.rs`
+
+## Usage
+
+To use the memory analyzer CLI just run
+
+`./main <filename>`
 
 ## Future improvements
 
