@@ -1,7 +1,7 @@
 use std::*;
 use std::io::stdin;
-mod directories_list;
-mod basic_concepts;
+pub mod basic_concepts;
+pub mod cli_interface;
 
 #[allow(dead_code)]
 fn strings()  {
