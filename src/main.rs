@@ -13,6 +13,15 @@ fn strings()  {
     println!("{}", my_string);
 }
 
+#[allow(dead_code)]
+fn basic_concepts() {
+    let my_string = String::from("Hello World");
+    basic_concepts::shadowing::shadowing();
+    basic_concepts::borrowing::borrow();
+    basic_concepts::slice::slice_string(&my_string);
+    basic_concepts::enums::call();
+}
+
 fn main() {
     //Define new string
     let my_string = String::from("Hello World");
