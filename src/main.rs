@@ -23,5 +23,19 @@ fn basic_concepts() {
 }
 
 fn main() {
-    cli_interface::user_input::read_user_input();
+    println!("#######\n Welcome to the Memory Analyzer\n #######\n");
+
+    let mut choice = String::new();
+    stdin()
+        .read_line(&mut choice)
+        .expect("Please specify a choice");
+
+    if choice == String::from("Y") || choice == String::from("Yes") {
+        cli_interface::user_input::read_user_input();
+    }
+
+    else {
+        println!("Exiting");
+        process::exit(0);
+    }
 }
